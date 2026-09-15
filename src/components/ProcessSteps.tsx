@@ -8,8 +8,8 @@ export default function ProcessSteps() {
       <div className="container-narrow grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16 items-center">
         <Reveal>
           <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
-            <div className="absolute -inset-3 rounded-[2rem] bg-navy-wash -z-10" aria-hidden />
-            <div className="relative aspect-[4/3] rounded-[1.5rem] overflow-hidden shadow-[0_24px_48px_-24px_rgba(18,22,42,0.35)]">
+            <div className="absolute -inset-3 rounded-xl bg-navy-wash -z-10" aria-hidden />
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-[0_24px_48px_-24px_rgba(18,22,42,0.35)]">
               <Image
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80&auto=format&fit=crop"
                 alt="Aperto de mãos selando um acordo"
@@ -58,7 +58,7 @@ export default function ProcessSteps() {
               href={waLink(waMessages.consulta)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp text-white font-medium px-7 py-3.5 text-[15px] hover:bg-whatsapp-deep transition-colors active:scale-[0.98]"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-lg bg-whatsapp text-white font-medium px-7 py-3.5 text-[15px] hover:bg-whatsapp-deep transition-colors active:scale-[0.98]"
             >
               Começar pelo diagnóstico inicial
             </a>

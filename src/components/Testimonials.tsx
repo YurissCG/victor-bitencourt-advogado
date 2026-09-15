@@ -20,7 +20,7 @@ export default function Testimonials() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 0.08}>
-              <figure className="rounded-3xl border border-hairline bg-paper/70 p-6 sm:p-7 h-full flex flex-col">
+              <figure className="rounded-xl border border-hairline bg-paper/70 p-6 sm:p-7 h-full flex flex-col">
                 <Quote size={22} className="text-gold-soft" strokeWidth={1.8} />
                 <blockquote className="mt-4 text-[15px] text-graphite leading-relaxed flex-1">
                   “{t.quote}”

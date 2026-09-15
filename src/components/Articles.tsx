@@ -23,7 +23,7 @@ export default function Articles() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
           {articles.map((a, i) => (
             <Reveal key={a.slug} delay={i * 0.08}>
-              <article className="group rounded-3xl border border-hairline bg-paper/70 overflow-hidden h-full flex flex-col hover:border-gold/50 transition-colors">
+              <article className="group rounded-xl border border-hairline bg-paper/70 overflow-hidden h-full flex flex-col hover:border-gold/50 transition-colors">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={`${a.image}?w=800&q=80&auto=format&fit=crop`}

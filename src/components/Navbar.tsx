@@ -56,7 +56,7 @@ export default function Navbar() {
             href={waLink(waMessages.consulta)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-navy text-parchment text-sm font-medium px-5 py-2.5 hover:bg-navy-deep transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-2 rounded-lg bg-navy text-parchment text-sm font-medium px-5 py-2.5 hover:bg-navy-deep transition-colors whitespace-nowrap"
           >
             Falar com o escritório
           </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-4 inline-flex items-center justify-center rounded-full bg-navy text-parchment text-sm font-medium px-5 py-3"
+                className="mt-4 inline-flex items-center justify-center rounded-lg bg-navy text-parchment text-sm font-medium px-5 py-3"
               >
                 Falar com o escritório
               </a>

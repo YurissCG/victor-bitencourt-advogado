@@ -23,7 +23,7 @@ export default function FAQ() {
           </h2>
         </Reveal>
 
-        <div className="mt-10 divide-y divide-hairline rounded-3xl border border-hairline bg-paper/70 overflow-hidden">
+        <div className="mt-10 divide-y divide-hairline rounded-xl border border-hairline bg-paper/70 overflow-hidden">
           {faqs.map((item, i) => {
             const isOpen = openIndex === i;
             return (

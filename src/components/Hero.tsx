@@ -9,14 +9,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
       <div aria-hidden className="absolute inset-0 bg-grain opacity-[0.5] pointer-events-none" />
-      <div
-        aria-hidden
-        className="absolute -top-24 -right-24 h-72 w-72 sm:h-96 sm:w-96 rounded-full bg-gold-wash blur-3xl opacity-70 animate-float pointer-events-none"
-      />
-      <div
-        aria-hidden
-        className="absolute top-1/3 -left-32 h-72 w-72 rounded-full bg-navy-wash blur-3xl opacity-70 pointer-events-none"
-      />
+      <div aria-hidden className="absolute top-0 inset-x-0 h-1 bg-gold pointer-events-none" />
 
       <div className="container-narrow relative grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-10 items-center">
         <div>
@@ -70,14 +63,14 @@ export default function Hero() {
               href={waLink(waMessages.consulta)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp text-white font-medium px-7 py-3.5 text-[15px] hover:bg-whatsapp-deep transition-colors active:scale-[0.98]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-whatsapp text-white font-medium px-7 py-3.5 text-[15px] hover:bg-whatsapp-deep transition-colors active:scale-[0.98]"
             >
               <MessageCircle size={18} />
               Falar com um advogado
             </a>
             <a
               href="#areas"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 text-ink font-medium px-7 py-3.5 text-[15px] hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-ink/20 text-ink font-medium px-7 py-3.5 text-[15px] hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
             >
               Áreas de atuação
               <ArrowRight size={16} />
@@ -102,8 +95,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="relative mx-auto w-full max-w-[360px] lg:max-w-none"
         >
-          <div className="absolute -inset-3 rounded-[2rem] border border-gold/30" aria-hidden />
-          <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden bg-navy shadow-[0_30px_60px_-20px_rgba(18,22,42,0.35)]">
+          <div className="absolute -inset-3 rounded-xl border border-gold/30" aria-hidden />
+          <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-navy shadow-[0_30px_60px_-20px_rgba(18,22,42,0.35)]">
             <Image
               src="/images/victor-hero.webp"
               alt="Victor Bitencourt, advogado"
@@ -113,7 +106,7 @@ export default function Hero() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-paper/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between">
+            <div className="absolute bottom-4 left-4 right-4 rounded-md bg-paper/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between">
               <div>
                 <p className="font-display text-[15px] text-ink leading-none">{firm.lawyerName}</p>
                 <p className="text-[11px] text-smoke mt-1">{firm.lawyerTitle} · {firm.oab}</p>

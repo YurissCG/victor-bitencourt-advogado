@@ -87,7 +87,7 @@ export default function Contact() {
           </div>
 
           <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-hairline bg-paper/80 p-6 sm:p-8">
+            <div className="rounded-xl border border-hairline bg-paper/80 p-6 sm:p-8">
               <p className="font-display text-xl text-ink">Envie uma mensagem</p>
               <p className="mt-1 text-sm text-smoke">Preencha os campos abaixo. Vamos abrir o WhatsApp com sua mensagem pronta.</p>
 
@@ -135,7 +135,7 @@ export default function Contact() {
                   onClick={(e) => {
                     if (!canSend) e.preventDefault();
                   }}
-                  className={`inline-flex w-full items-center justify-center gap-2 rounded-full font-medium px-6 py-3.5 text-[15px] transition-colors ${
+                  className={`inline-flex w-full items-center justify-center gap-2 rounded-lg font-medium px-6 py-3.5 text-[15px] transition-colors ${
                     canSend
                       ? "bg-whatsapp text-white hover:bg-whatsapp-deep active:scale-[0.98]"
                       : "bg-ink/10 text-mist cursor-not-allowed"

@@ -29,7 +29,7 @@ export default function Footer() {
               href={waLink(waMessages.default)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center justify-center rounded-full bg-gold text-navy-deep font-semibold px-6 py-3 text-sm hover:bg-gold-soft transition-colors"
+              className="mt-5 inline-flex items-center justify-center rounded-lg bg-gold text-navy-deep font-semibold px-6 py-3 text-sm hover:bg-gold-soft transition-colors"
             >
               Falar no WhatsApp
             </a>

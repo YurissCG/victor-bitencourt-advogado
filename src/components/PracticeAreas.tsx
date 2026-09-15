@@ -44,7 +44,7 @@ export default function PracticeAreas() {
                   rel="noopener noreferrer"
                   whileHover={{ y: -6 }}
                   transition={{ duration: 0.25 }}
-                  className="group flex flex-col h-full rounded-3xl border border-hairline bg-paper p-6 sm:p-7 hover:border-gold/50 hover:shadow-[0_20px_40px_-24px_rgba(18,22,42,0.25)] transition-shadow"
+                  className="group flex flex-col h-full rounded-xl border border-hairline bg-paper p-6 sm:p-7 hover:border-gold/50 hover:shadow-[0_20px_40px_-24px_rgba(18,22,42,0.25)] transition-shadow"
                 >
                   <div className="h-11 w-11 rounded-full bg-navy-wash flex items-center justify-center">
                     <Icon size={20} className="text-navy" strokeWidth={1.8} />
@@ -75,7 +75,7 @@ export default function PracticeAreas() {
               href={waLink(waMessages.consulta)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 text-ink font-medium px-7 py-3 text-sm hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-ink/20 text-ink font-medium px-7 py-3 text-sm hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
             >
               Não encontrou sua área? Fale com o escritório
             </a>

@@ -20,7 +20,7 @@ export default function LocationMap() {
         </Reveal>
 
         <Reveal delay={0.12}>
-          <div className="mt-10 grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] rounded-3xl border border-hairline overflow-hidden bg-paper">
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] rounded-xl border border-hairline overflow-hidden bg-paper">
             <div className="p-6 sm:p-8 flex flex-col justify-center gap-5">
               <div className="flex items-start gap-3">
                 <span className="h-11 w-11 rounded-full bg-gold-wash flex items-center justify-center shrink-0">
@@ -35,7 +35,7 @@ export default function LocationMap() {
                 href={directionsHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-ink/20 text-ink font-medium px-6 py-3 text-sm w-full sm:w-fit hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-ink/20 text-ink font-medium px-6 py-3 text-sm w-full sm:w-fit hover:border-ink/40 hover:bg-ink/[0.03] transition-colors"
               >
                 <Navigation size={16} />
                 Como chegar

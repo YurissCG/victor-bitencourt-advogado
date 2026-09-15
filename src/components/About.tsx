@@ -27,8 +27,8 @@ export default function About() {
       <div className="container-narrow grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16 items-center">
         <Reveal>
           <div className="relative mx-auto w-full max-w-[320px] lg:max-w-none">
-            <div className="absolute -inset-3 rounded-[2rem] bg-gold-wash -z-10" aria-hidden />
-            <div className="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden shadow-[0_24px_48px_-24px_rgba(18,22,42,0.35)]">
+            <div className="absolute -inset-3 rounded-xl bg-gold-wash -z-10" aria-hidden />
+            <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-[0_24px_48px_-24px_rgba(18,22,42,0.35)]">
               <Image
                 src="/images/victor-portrait.webp"
                 alt={`${firm.lawyerName}, advogado responsável pela ${firm.name}`}
@@ -62,7 +62,7 @@ export default function About() {
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {credentials.map((c, i) => (
               <Reveal key={c.title} delay={0.15 + i * 0.06}>
-                <div className="rounded-2xl border border-hairline bg-paper/70 p-4 h-full">
+                <div className="rounded-xl border border-hairline bg-paper/70 p-4 h-full">
                   <c.icon size={20} className="text-navy" strokeWidth={1.8} />
                   <p className="mt-3 text-[11px] uppercase tracking-wide text-smoke">{c.title}</p>
                   <p className="mt-1 text-sm text-ink leading-snug">{c.text}</p>

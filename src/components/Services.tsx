@@ -31,7 +31,7 @@ export default function Services() {
               const Icon = icons[i % icons.length];
               return (
                 <Reveal key={s.title} delay={i * 0.08}>
-                  <div className="rounded-2xl border border-hairline bg-paper/70 p-6 h-full">
+                  <div className="rounded-xl border border-hairline bg-paper/70 p-6 h-full">
                     <Icon size={20} className="text-gold" strokeWidth={1.8} />
                     <h3 className="mt-4 font-display text-lg text-ink">{s.title}</h3>
                     <p className="mt-2 text-sm text-smoke leading-relaxed">{s.description}</p>
