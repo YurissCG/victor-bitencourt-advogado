@@ -3,6 +3,7 @@ import Stats from "@/components/Stats";
 import About from "@/components/About";
 import PracticeAreas from "@/components/PracticeAreas";
 import Services from "@/components/Services";
+import ProcessSteps from "@/components/ProcessSteps";
 import Differentials from "@/components/Differentials";
 import Articles from "@/components/Articles";
 import Testimonials from "@/components/Testimonials";
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <PracticeAreas />
       <Services />
+      <ProcessSteps />
       <Differentials />
       <Articles />
       <Testimonials />

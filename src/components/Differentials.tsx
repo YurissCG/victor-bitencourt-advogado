@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeartHandshake, Award, MessagesSquare, Target } from "lucide-react";
 import Reveal from "./Reveal";
 import { differentials, waLink, waMessages } from "@/lib/content";
@@ -6,7 +7,16 @@ const icons = [HeartHandshake, Award, MessagesSquare, Target];
 
 export default function Differentials() {
   return (
-    <section id="diferenciais" className="py-20 sm:py-28 relative overflow-hidden bg-navy text-parchment">
+    <section id="diferenciais" className="py-20 sm:py-28 relative overflow-hidden bg-navy-deep text-parchment">
+      <Image
+        src="https://images.unsplash.com/photo-1769092992534-f2d0210162b9?w=1600&q=70&auto=format&fit=crop"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover opacity-25"
+        aria-hidden
+      />
+      <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-navy-deep/95 via-navy/90 to-navy-deep/95 pointer-events-none" />
       <div aria-hidden className="absolute inset-0 bg-grain opacity-[0.06] pointer-events-none" />
       <div className="container-narrow relative">
         <Reveal>

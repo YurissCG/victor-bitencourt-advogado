@@ -54,9 +54,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mt-5 max-w-lg text-[15px] sm:text-base leading-relaxed text-smoke"
           >
-            Atendimento jurídico personalizado para pessoas e empresas que precisam de
-            orientação e segurança para tomar decisões importantes. Do primeiro contato à
-            solução do seu caso, com clareza em cada etapa.
+            Está no meio de um divórcio, uma demissão, uma cobrança indevida ou um processo
+            e não sabe qual é o próximo passo? Explicamos sua situação em linguagem simples
+            e construímos uma estratégia jurídica pensada para o seu caso, do primeiro
+            contato até a solução.
           </motion.p>
 
           <motion.div

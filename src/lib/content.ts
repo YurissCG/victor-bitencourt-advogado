@@ -58,7 +58,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "familia",
     title: "Direito de Família",
-    short: "Divórcio, guarda, pensão e outras questões familiares.",
+    short: "Está passando por uma separação, disputa de guarda ou pensão e não sabe por onde começar?",
     description:
       "Condução humanizada de divórcios, partilha de bens, guarda e regulamentação de convivência, pensão alimentícia, união estável e inventários, sempre buscando a solução menos desgastante para a família.",
     bullets: ["Divórcio consensual e litigioso", "Guarda e convivência familiar", "Pensão alimentícia", "Inventário e partilha de bens"],
@@ -66,7 +66,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "trabalhista",
     title: "Direito Trabalhista",
-    short: "Orientação e atuação em questões relacionadas às relações de trabalho.",
+    short: "Foi demitido, não recebeu o que tinha direito ou vive uma situação de pressão no trabalho?",
     description:
       "Atuação para empregados e empresas em verbas rescisórias, horas extras, assédio moral, acordos e reclamações trabalhistas, com foco em prevenção de passivos e defesa estratégica em juízo.",
     bullets: ["Reclamações trabalhistas", "Verbas rescisórias e horas extras", "Assédio moral e acidente de trabalho", "Consultoria preventiva para empresas"],
@@ -74,7 +74,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "empresarial",
     title: "Direito Empresarial",
-    short: "Assessoria jurídica para empresas e empresários.",
+    short: "Contratos mal redigidos ou riscos societários que podem custar caro ao seu negócio?",
     description:
       "Suporte jurídico completo para empresas de todos os portes: contratos, societário, recuperação de crédito, compliance e prevenção de litígios que possam colocar o negócio em risco.",
     bullets: ["Elaboração e revisão de contratos", "Constituição e alteração societária", "Recuperação de crédito", "Compliance e prevenção de litígios"],
@@ -82,7 +82,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "civel",
     title: "Direito Cível",
-    short: "Contratos, indenizações e defesa de direitos em geral.",
+    short: "Prejuízo, cobrança indevida ou contrato descumprido pedindo reparação?",
     description:
       "Defesa de direitos em ações de indenização, cobrança, contratos, questões consumeristas e imobiliárias, com atuação estratégica tanto na esfera consultiva quanto contenciosa.",
     bullets: ["Ações de indenização e reparação de danos", "Direito do consumidor", "Contratos e cobranças", "Questões imobiliárias"],
@@ -90,7 +90,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "criminal",
     title: "Direito Criminal",
-    short: "Defesa técnica em inquéritos, processos e audiências.",
+    short: "Investigação, inquérito ou processo criminal exigindo uma defesa imediata?",
     description:
       "Defesa criminal em todas as fases: investigação, inquérito policial, processo e execução penal, com atendimento ágil e discreto em casos que exigem urgência.",
     bullets: ["Defesa em inquéritos e processos", "Acompanhamento em audiências", "Habeas corpus e medidas urgentes", "Execução penal"],
@@ -98,10 +98,30 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "previdenciario",
     title: "Direito Previdenciário",
-    short: "Aposentadorias, benefícios e revisões junto ao INSS.",
+    short: "Benefício negado pelo INSS ou aposentadoria que não sai do papel?",
     description:
       "Planejamento e revisão de aposentadorias, auxílios por incapacidade, pensões e demais benefícios previdenciários, com análise detalhada do histórico contributivo.",
     bullets: ["Aposentadorias e planejamento previdenciário", "Auxílio-doença e benefícios por incapacidade", "Revisão de benefícios", "Recursos administrativos e judiciais"],
+  },
+];
+
+export type ProcessStep = {
+  title: string;
+  description: string;
+};
+
+export const process: ProcessStep[] = [
+  {
+    title: "Diagnóstico inicial",
+    description: "Você conta o que está acontecendo e recebe uma primeira orientação clara sobre seus direitos e os caminhos possíveis.",
+  },
+  {
+    title: "Estratégia sob medida",
+    description: "Definimos juntos o melhor caminho, seja acordo, negociação ou ação judicial, com prazos e custos explicados antes de começar.",
+  },
+  {
+    title: "Acompanhamento próximo",
+    description: "Você acompanha cada etapa em linguagem simples, com retorno rápido sempre que surgir uma dúvida.",
   },
 ];
 
@@ -141,26 +161,31 @@ export type Article = {
   title: string;
   excerpt: string;
   area: string;
+  image: string;
 };
 
+// Fotos de banco de imagens gratuito (Unsplash), usadas apenas como ilustração de apoio.
 export const articles: Article[] = [
   {
     slug: "como-funciona-o-divorcio-consensual",
     title: "Como funciona o divórcio consensual no Brasil",
     excerpt: "Entenda os requisitos, o passo a passo e em quanto tempo um divórcio de comum acordo pode ser concluído.",
     area: "Direito de Família",
+    image: "https://images.unsplash.com/photo-1713942590288-1468a2d88ee4",
   },
   {
     slug: "direitos-na-rescisao-trabalhista",
     title: "Quais são seus direitos em uma rescisão de contrato de trabalho",
     excerpt: "Um guia rápido sobre verbas rescisórias, aviso prévio e o que verificar antes de assinar o termo de rescisão.",
     area: "Direito Trabalhista",
+    image: "https://images.unsplash.com/photo-1632152053640-da3a8b3ee812",
   },
   {
     slug: "quando-vale-a-pena-revisar-um-contrato",
     title: "Quando vale a pena revisar um contrato empresarial",
     excerpt: "Cláusulas que merecem atenção redobrada antes de fechar negócio e como evitar prejuízos futuros.",
     area: "Direito Empresarial",
+    image: "https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d",
   },
 ];
 
