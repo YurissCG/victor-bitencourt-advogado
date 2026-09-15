@@ -19,7 +19,7 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://bitencourtadvocacia.vercel.app";
+const siteUrl = "https://victor-bitencourt-advogado.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = "https://bitencourtadvocacia.vercel.app";
+  const siteUrl = "https://victor-bitencourt-advogado.vercel.app";
   return [
     {
       url: siteUrl,
